@@ -30,7 +30,7 @@
                         <div class="form-group">
                             <div class="col-sm-offset-3 col-sm-6">
                                 <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-plus"></i>Add Task
+                                    <i class="fa fa-btn fa-plus"></i> Add Task
                                 </button>
                             </div>
                         </div>
@@ -40,14 +40,14 @@
 
             <!-- Current Tasks -->
             @if (count($tasks) > 0)
-                <div class="panel panel-danger">
+                <div class="panel panel-info">
                     <div class="panel-heading">
                         Current Tasks
                         <form action="{{ url('task/all') }}" method="POST">
                             {{ csrf_field() }}
 
                             <button type="submit" class="btn btn-danger">
-                                <i class="fa fa-btn fa-trash"></i>Delete all
+                                <i class="fa fa-btn fa-trash"></i> Delete all
                             </button>
                         </form>
                     </div>
@@ -72,7 +72,7 @@
                                             {{ method_field('DELETE') }}
 
                                             <button type="submit" class="btn btn-danger">
-                                                <i class="fa fa-btn fa-trash"></i>Delete
+                                                <i class="fa fa-btn fa-trash"></i> Delete
                                             </button>
                                         </form>
                                     </td>
